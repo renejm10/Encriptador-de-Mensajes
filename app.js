@@ -1,5 +1,6 @@
 
 let encriptado;
+let desencriptado;
 
 function imagechange(mensaje){
     if (mensaje.value !=""){
@@ -15,8 +16,6 @@ function imagechange(mensaje){
 
 function encriptar(){
     let mensaje = document.getElementById("texto").value;
-    console.log(mensaje);
-
     encriptado= mensaje.replaceAll("e","enter");
     encriptado= encriptado.replaceAll("i","imes");
     encriptado= encriptado.replaceAll("a","ai");
@@ -24,4 +23,20 @@ function encriptar(){
     encriptado= encriptado.replaceAll("u","ufat");
     console.log(encriptado);
     document.getElementById("mensaje_encriptado").innerHTML=encriptado;
+}
+
+function desencriptar(){
+    let mensaje = document.getElementById("texto").value;
+    encriptado= mensaje.replaceAll("enter","e");
+    encriptado= encriptado.replaceAll("imes","i");
+    encriptado= encriptado.replaceAll("ai","a");
+    encriptado= encriptado.replaceAll("ober","o");
+    encriptado= encriptado.replaceAll("ufat","u");
+    console.log(encriptado);
+    document.getElementById("mensaje_encriptado").innerHTML=encriptado;
+}
+
+function copiar(){
+    navigator.clipboard.writeText(encriptado);
+    console.log("copiado" + encriptado);
 }

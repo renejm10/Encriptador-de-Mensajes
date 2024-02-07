@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de Texto</title>
+    <!--<link href="reset.css" rel="stylesheet"> -->
     <link href="style.css" rel="stylesheet">
     <script src="app.js"></script>
 </head>
@@ -21,7 +22,8 @@
             <div class="botones">
                 <button type="button" class="boton" id="encriptar" name="encriptar"
                     onclick="encriptar()">Encriptar</button>
-                <button type="button" class="boton" id="desencripar" name="desencriptar">Desencripar</button>
+                <button type="button" class="boton" id="desencripar" name="desencriptar"
+                    onclick="desencriptar()">Desencripar</button>
             </div>
         </div>
 
@@ -33,7 +35,7 @@
             </div>
             <div id="mensaje">
                 <p id="mensaje_encriptado"></p>
-                <button type="button" class="boton" id="copiar" name="copiar">Copiar</button>
+                <button type="button" class="boton" id="copiar" name="copiar" onclick="copiar()">Copiar</button>
             </div>
 
         </div>
