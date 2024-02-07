@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Encriptador de Texto</title>
-        <link href="style.css" rel="stylesheet">
-        <script src="app.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>ENCRIPTADOR DE TEXTO</h1>
-        </header>
-        <main>
-            
-            <div class="texto_ingresado">
-                <textarea onkeyup="imagechange(this)" id="texto" name="texto" placeholder="Ingrese texto a encriptar" rows="10"></textarea>
-                <div class="botones">
-                    <button type="button" class="boton" id="encriptar" name="encriptar">Encriptar</button>
-                    <button type="button" class="boton" id="desencripar" name="desencriptar">Desencripar</button>  
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ENCRIPTADOR DE TEXTO</h1>
+    </header>
+    <main>
+
+        <div class="texto_ingresado">
+            <textarea onkeyup="imagechange(this)" id="texto" name="texto" placeholder="Ingrese texto a encriptar"
+                rows="10"></textarea>
+            <div class="botones">
+                <button type="button" class="boton" id="encriptar" name="encriptar"
+                    onclick="encriptar()">Encriptar</button>
+                <button type="button" class="boton" id="desencripar" name="desencriptar">Desencripar</button>
+            </div>
+        </div>
+
+        <div class="texto_encriptado">
+            <div id="noMensaje">
+                <img src="img/finding.jpg" id="imagen" alt="men with a loop">
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="mensaje">
+                <p id="mensaje_encriptado"></p>
+                <button type="button" class="boton" id="copiar" name="copiar">Copiar</button>
             </div>
 
-            <div class="texto_encriptado">
-                <div id="noMensaje">
-                    <img src="img/finding.jpg" id="imagen" alt="men with a loop">
-                    <h2>Ningun mensaje fue encontrado</h2>
-                    <p>Ingrese el texto que desees encriptar o desencriptar</p>    
-                </div>
-                <div id="mensaje">
-                    <p id="mensaje_encriptado">Lorem Ipsum is simply dummy text of the</p>
-                    <button type="button" class="boton" id="copiar" name="copiar">Copiar</button>
-                </div>
-                
-            </div>
+        </div>
 
-        </main>
-        <footer>
+    </main>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
