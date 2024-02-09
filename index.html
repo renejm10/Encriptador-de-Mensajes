@@ -20,7 +20,7 @@
 
         <section class="areaEncriptado">
 
-                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30"></textarea>
+                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30" onkeyup="imagechange(this)" ></textarea>
                 <p class="msjAdvertencia">⚠ Solo letras minusculas y sin acentos</p> 
                 <div class="grupoBotonoes">
                     <input type="button" class="boton" id="btnEncriptar" value="Encriptar">
@@ -30,18 +30,18 @@
         </section>
 
         <section class="areaResultado">
-            <div class="resultado">
-                <div class="noEncontrado">
+
+                <div class="noEncontrado" id="idNoEncontrado">
                     <img class="imagenBuscar" src="./img/finding.jpg" alt="persona buscando con lupa">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingrese el texto que desees encriptar o desencriptar</p>
                 </div>
 
-                <div class="txtEncontrado">
+                <div class="txtEncontrado" id="encontrado">
                     <p>resultado</p>
                     <input type="button" class="boton" id="btnCopiar" value="Copiar">
                 </div>
-            </div>
+
         </section>
 
     </main>
