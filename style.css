@@ -1,0 +1,83 @@
+body{
+    background-image: linear-gradient(180deg,#609ED4,#356EA9);
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+header{
+    margin: 50px;
+}
+
+header h1{
+    color: #031831;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Seccion del area de ingreso de texto*/
+.areaEncriptado{
+    width: 59.5%;
+    height: 75vh;
+    margin: 0 25px 0 200px;
+}
+
+.areaEncriptado #texto{
+    margin:10px;
+    width: 97.5%;
+    height: 80%;
+    resize: none;
+    color: #031831;
+    font-size: 3em;
+    text-align: justify;
+    inline-size: 1.5;
+    background: transparent;
+    border: none;
+}
+
+.areaEncriptado #texto::placeholder{
+    color: #031831;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.areaEncriptado #texto:focus{
+    outline: none;
+}
+
+.msjAdvertencia{
+    margin: 0 0 10px 10px;
+    font-size: 12px;
+    color: azure;
+}
+
+.boton{
+    height: 50px;
+    border-radius: 20px; 
+}
+
+.grupoBotonoes .boton{
+    width: 45%;
+    margin-left: 10px;
+}
+
+
+/*Seccion del area de resultados */
+.areaResultado{
+    background-color:azure;
+    box-shadow: 0 0 20px 5px #031831;
+    justify-content: end;
+    width: 25%;
+    height: 92vh;
+    margin-top: -110px;
+    border-radius: 15px;
+}
+
+.areaResultado .boton{
+    width: 85%;
+}

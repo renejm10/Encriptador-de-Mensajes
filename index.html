@@ -6,6 +6,9 @@
     <title>Encriptador de texto</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <script src="app.js"></script>
 </head>
 <body>
@@ -17,17 +20,28 @@
 
         <section class="areaEncriptado">
 
-            <div>
-                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows=""
-                <div>
-
+                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30"></textarea>
+                <p class="msjAdvertencia">⚠ Solo letras minusculas y sin acentos</p> 
+                <div class="grupoBotonoes">
+                    <input type="button" class="boton" id="btnEncriptar" value="Encriptar">
+                    <input type="button" class="boton" id="btnDesencriptar" value="Desencriptar">
                 </div>
-            </div>
 
         </section>
 
         <section class="areaResultado">
+            <div class="resultado">
+                <div class="noEncontrado">
+                    <img class="imagenBuscar" src="./img/finding.jpg" alt="persona buscando con lupa">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
 
+                <div class="txtEncontrado">
+                    <p>resultado</p>
+                    <input type="button" class="boton" id="btnCopiar" value="Copiar">
+                </div>
+            </div>
         </section>
 
     </main>
@@ -35,42 +49,3 @@
 </html>
 
 
-<!--
-
-<body>
-    <header>
-        <h1>ENCRIPTADOR DE TEXTO</h1>
-    </header>
-    <main>
-
-        <div class="texto_ingresado">
-            <textarea onkeyup="imagechange(this)" id="texto" name="texto" placeholder="Ingrese texto a encriptar"
-                rows="10"></textarea>
-            <div class="botones">
-                <button type="button" class="boton" id="encriptar" name="encriptar"
-                    onclick="encriptar()">Encriptar</button>
-                <button type="button" class="boton" id="desencripar" name="desencriptar"
-                    onclick="desencriptar()">Desencripar</button>
-            </div>
-        </div>
-
-        <div class="texto_encriptado">
-            <div id="noMensaje">
-                <img src="img/finding.jpg" id="imagen" alt="men with a loop">
-                <h2>Ningun mensaje fue encontrado</h2>
-                <p>Ingrese el texto que desees encriptar o desencriptar</p>
-            </div>
-            <div id="mensaje">
-                <p id="mensaje_encriptado">asdasdas</p>
-                <button type="button" class="boton" id="copiar" name="copiar" onclick="copiar()">Copiar</button>
-            </div>
-
-        </div>
-
-    </main>
-    <footer>
-
-    </footer>
-</body>
-
-</html>
