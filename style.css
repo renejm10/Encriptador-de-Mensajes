@@ -23,7 +23,7 @@ main{
 /*Seccion del area de ingreso de texto*/
 .areaEncriptado{
     width: 59.5%;
-    height: 75vh;
+    height: 85vh;
     margin: 0 25px 0 200px;
 }
 
@@ -78,6 +78,11 @@ main{
     border-radius: 15px;
 }
 
+.txtEncontrado{
+    display: none;
+}
+
+/*Seccion a mostrar cuando no hay texto encontrado*/
 .noEncontrado{
     display: flex;
     flex-direction: column;
@@ -95,24 +100,46 @@ main{
     text-align: center;
 }
 
+.imagenBuscar{
+    width: 100%;
+    height: auto;
+}
+
 .noEncontrado p{
+    display: block;
     font-size: 1em;
     width: 80%;
     text-align: center;
     line-height: 1.5;
 }
 
+/*Seccion a mostrar cuando hay texto encontrado*/
+
 .txtEncontrado{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
+}
+
+.txtEncontrado #resultado{
+    width: 80%;
+    margin: 50px;
+    color: #031831;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
 }
 
 .areaResultado .txtEncontrado .boton{
     position: relative;
     bottom: 0px;
     width: 85%;
+}
+
+.txtEncontrado #btnCopiar{
+    margin: 0 auto;
+    margin-bottom: 25px;
 }

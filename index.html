@@ -23,8 +23,8 @@
                 <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30" onkeyup="imagechange(this)" ></textarea>
                 <p class="msjAdvertencia">⚠ Solo letras minusculas y sin acentos</p> 
                 <div class="grupoBotonoes">
-                    <input type="button" class="boton" id="btnEncriptar" value="Encriptar">
-                    <input type="button" class="boton" id="btnDesencriptar" value="Desencriptar">
+                    <input type="button" class="boton" id="btnEncriptar" value="Encriptar" onclick="encriptar()">
+                    <input type="button" class="boton" id="btnDesencriptar" value="Desencriptar" onclick="desencriptar()">
                 </div>
 
         </section>
@@ -38,8 +38,8 @@
                 </div>
 
                 <div class="txtEncontrado" id="encontrado">
-                    <p>resultado</p>
-                    <input type="button" class="boton" id="btnCopiar" value="Copiar">
+                    <p id="resultado"></p>
+                    <input type="button" class="boton" id="btnCopiar" value="Copiar" onclick="copiar()">
                 </div>
 
         </section>
