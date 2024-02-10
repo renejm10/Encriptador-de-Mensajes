@@ -44,6 +44,9 @@ function copiar(){
     if (txtCopiar !=""){
         navigator.clipboard.writeText(txtCopiar);
     }
+    else{
+        alert("Error!, debe generar un resultado primero!")
+    }
     
     
 }
