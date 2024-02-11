@@ -1,3 +1,5 @@
+
+
 body{
     background: linear-gradient(180deg,#609ED4,#356EA9);
     font-family: 'Roboto', sans-serif;
@@ -85,9 +87,6 @@ main{
     border-radius: 15px;
 }
 
-.txtEncontrado{
-    display: none;
-}
 
 /*Seccion a mostrar cuando no hay texto encontrado*/
 .noEncontrado{
@@ -149,6 +148,10 @@ main{
 .txtEncontrado #btnCopiar{
     margin: 0 auto;
     margin-bottom: 25px;
+}
+
+.areaResultado .txtEncontrado{
+    display: none;
 }
 
 
