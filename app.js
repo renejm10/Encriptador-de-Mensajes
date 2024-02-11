@@ -1,6 +1,7 @@
 let encriptado;
 let desencriptado;
 
+
 function imagechange(mensaje){
     if (mensaje.value !=""){
         document.getElementById("idNoEncontrado").style.display="none";

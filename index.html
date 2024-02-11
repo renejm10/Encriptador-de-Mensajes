@@ -20,7 +20,7 @@
 
         <section class="areaEncriptado">
 
-                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30" onkeyup="imagechange(this)" ></textarea>
+                <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui.." rows="10" cols="30" onkeyup="this.value = this.value.toLowerCase() , this.value = this.value.replace(/[&*<>!¡¿?@#$%/-_]/g, ''), imagechange(this)" ></textarea>
                 <p class="msjAdvertencia">⚠ Solo letras minusculas y sin acentos</p> 
                 <div class="grupoBotonoes">
                     <input type="button" class="boton" id="btnEncriptar" value="Encriptar" onclick="encriptar()">
